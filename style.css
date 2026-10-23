@@ -1,0 +1,76 @@
+/* 색은 여기에 모아 두면 한 번에 바꿀 수 있습니다. */
+:root {
+  --bg: #f3e9dc;
+  --text: #4a3426;
+  --card: #fffaf3;
+  --accent: #8b5e3c;
+  --shadow: 0 2px 8px rgba(74, 52, 38, 0.12);
+}
+
+html {
+  background: var(--bg);
+}
+
+/* 휴대폰 폭 기준. 넓은 화면에서는 가운데에 모입니다. */
+body {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #d8c7b3;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  font-size: 16px; /* 16px 미만이면 휴대폰이 화면을 확대합니다. */
+}
+
+button {
+  min-height: 44px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
